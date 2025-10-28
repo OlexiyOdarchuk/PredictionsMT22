@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background-color: #2c2a28; /* Dark brown */
+    color: #f2e5d7; /* Light beige */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #e57a44; /* Burnt orange */
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.prediction-card {
+    background-color: #4a4642; /* Darker brown */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.prediction-card h2 {
+    font-size: 1.5em;
+    color: #e57a44; /* Burnt orange */
+    margin-bottom: 20px;
+}
+
+#newQuoteSection {
+    font-size: 1.8em;
+    line-height: 1.6;
+    min-height: 100px;
+    color: #f2e5d7; /* Light beige */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.monobank-button {
+    display: inline-block;
+    background-color: #e57a44; /* Burnt orange */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.monobank-button:hover {
+    background-color: #d46a34; /* Darker burnt orange */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .prediction-card {
+        padding: 30px;
+    }
+
+    #newQuoteSection {
+        font-size: 1.5em;
+    }
+
+    .monobank-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
