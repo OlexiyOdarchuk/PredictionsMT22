@@ -568,6 +568,10 @@ let quotes = [
 ]
 
 function getQuote() {
+    if (quotes.length === 0) {
+        document.getElementById('newQuoteSection').innerHTML = "Передбачення закінчились. Невже жодне вам не сподобалося?..😟";
+        return;
+    }
     var randomNumber = Math.floor(Math.random() * quotes.length);
     var quote = quotes.splice(randomNumber, 1)[0];
     document.getElementById('newQuoteSection').innerHTML = quote;
