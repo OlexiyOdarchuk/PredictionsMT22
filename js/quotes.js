@@ -394,7 +394,7 @@ let quotes = [
     "Сьогодні принтер вирішить друкувати вночі 🖨️",
     "Сьогодні гаджети будуть лагати одночасно, створюючи хаос 💻",
     "Сьогодні смартфон вирішить, що він розумніший за тебе 🤖",
-    "Сьогодні ноутбук замерзне… а разом з ним і твої плани ❄️",
+    "Сьогодні ноутбук замерзне… Купи сумку з мехом ❄️",
     "Сьогодні колонки заграють гучніше, ніж потрібно 🔊",
     "Сьогодні зарядка покаже 'Charging', але не заряджатиме ⚡",
     "Сьогодні навушники самі виберуть трек, який тобі не подобається 🎧",
@@ -569,5 +569,5 @@ let quotes = [
 
 function getQuote() {
     var randomNumber = Math.floor(Math.random() * quotes.length);
-    document.getElementById('newQuoteSection').innerHTML = quotes[randomNumber];
+    document.getElementById('newQuoteSection').innerHTML = quotes.pop(randomNumber);
 }
