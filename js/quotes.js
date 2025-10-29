@@ -569,5 +569,6 @@ let quotes = [
 
 function getQuote() {
     var randomNumber = Math.floor(Math.random() * quotes.length);
-    document.getElementById('newQuoteSection').innerHTML = quotes.pop(randomNumber);
+    var quote = quotes.splice(randomNumber, 1)[0];
+    document.getElementById('newQuoteSection').innerHTML = quote;
 }
